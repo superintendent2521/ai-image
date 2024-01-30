@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Simple Flask Image Uploader</title>
+<h1>Upload an image</h1>
+<form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="file"><br><br>
+    <input class="btn btn-primary" type="submit" value="Upload">
+</form>
